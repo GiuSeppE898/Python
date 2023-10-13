@@ -1,0 +1,9 @@
+#Applica sconti
+
+prezzo = int(input("inserisci il prezzo "))
+risposta = input("Vuoi applicare lo sconto del 20%")
+if risposta.__eq__("si"):
+    prezzo = prezzo - (prezzo*20)/100
+print(prezzo)
+
+
