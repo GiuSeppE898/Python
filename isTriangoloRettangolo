@@ -1,0 +1,11 @@
+#Scrivere un programma che chieda all'utente di inserire tre numeri interi.
+# Il programma deve verificare se i tre numeri formano un triangolo rettangolo.
+# Se i tre numeri formano un triangolo rettangolo, stampare "I tre numeri
+# formano un triangolo rettangolo". Altrimenti, stampare "I tre numeri non formano un triangolo rettangolo".
+l1 = int(input("Inserisci il lato 1"))
+l2 = int(input("Inserisci il lato 2"))
+l3 = int(input("Inserisci il lato 3"))
+if l1**2 + l2**2 == l3**2 or l1**2 + l3**2 == l2**2 or l2**2 + l3**2 == l1**2:
+    print("Triangolo rettangolo")
+else:
+    print("Non e un triangolo rettangolo")
