@@ -1,0 +1,15 @@
+#esercizio liste
+numeri=[]
+numeri2=[7,8,9]
+for i in range(6):
+    numeri.append(int(input("inserisci un numero"))) #inserimento
+
+for num in numeri:    #stampa
+    print(num)
+print(f"Il numero in posizione 1 e' {numeri[1]}")
+numeri.pop(3)           #elimino l'elemento in posizione 3
+numeri.append(10)       #inserimento in coda del numero 10
+print(f"Il numero 2 compare {numeri.count(2)}")
+numeri.extend(numeri2) #unione di due liste
+
+
