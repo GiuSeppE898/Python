@@ -1,0 +1,13 @@
+def dividi(p):
+
+    dispari = []
+    for n in p:
+        if n % 2 == 1:
+            dispari.append(n)
+            p.remove(n)
+    return dispari
+
+pari = [1, 2, 3, 4]
+dispari = dividi(pari)
+print("Pari:", pari)
+print("Dispari:", dispari)
