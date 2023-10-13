@@ -1,0 +1,14 @@
+#Prima calcolatrice in Python
+num1 = int(input("inserisci il primo numero "))  #operazione di cast perche num1 inizialmente e una stringa
+num2 = int(input("inserisci il secondo numero "))
+scelta = int(input(" 1: somma\n 2:sottrazione\n 3:moltiplicazione\n 4: divisione\n"))
+if scelta == 1:
+    print(num1+num2)
+elif scelta == 2:
+    print(num1 - num2)
+elif scelta == 3:
+    print(num1*num2)
+else:
+    print(num1/num2)
+
+
