@@ -1,0 +1,18 @@
+#operazioni con le stringhe
+nome = input("Inserisci il tuo nome ")
+cognome = input("Inserisci il tuo cognome ")
+print(f"ciao {nome.capitalize()} {cognome.upper()}") #scrive nome e cognome con la prima lettera in maiuscolo
+print(f"il tuo nome ha {len(nome)} lettere") #conta le lettere nel nome
+print(f"Inizia con {nome[0].upper()}") #stampa la lettera in mauiscolo
+print(f"e finisce con {nome[-1].upper()}")
+print(f"Il tuo cognome al contratio e' {cognome[::-1].lower()}")
+#versione compatta 
+#risposta = "Il tuo nome ha {} lettere, inizia con {} e finisce con {}. \n Inoltre il tuo cognome al contrario è {}"
+#print(risposta.format(len(nome), nome[0].upper(), nome[-1].upper(), cognome[::-1].lower()))
+print(f"Spelling del tuo nome {"-".join(nome)}") #separa ogni lettera con un "-"
+if(cognome.endswith("ino")):  #controlla se il cognome termina in "ino"
+    print("il tuo cognome termina con ino")
+else:
+    print("il tuo cognome non termina con ino")
+lettera = input("Inserisci la lettera da ricercare")
+print(f"Nel tuo nome la lettera p appare {nome.count(lettera)}")  #conta quante volta una lettera e presente nel nome
